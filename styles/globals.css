@@ -1,16 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* ./styles/globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import 'tailwindcss/utilities';
 
-* {
-  box-sizing: border-box;
+/* To access base */
+@layer base {
+  body {
+    @apply bg-[#06202A] text-gray-300;
+  }
 }
